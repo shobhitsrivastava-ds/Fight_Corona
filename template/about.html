@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>About Page</title>
+</head>
+<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+  
+    .img_holder img{
+        max-width: 100%; max-height: 100%;
+    }
+
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+</style>
+<body>
+
+	<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Fight Corona</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link" href="/corona">Corona</a>
+
+        </div>
+        <!-- Navbar Right Side -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+	<div class="container">
+		<h3>Corona Virus : </h3>
+            <div style="text-align: center; margin-top: 20px">
+       <img style="max-height: 400px", src="{{ url_for('static', filename='c3.jpg') }}" height="260" width="482"/>
+   </div>
+   <br>
+    <p>Corona Virus are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory illness now called COVID-19.</p>
+    <hr>
+    <h5>Main Highlights : </h5>
+    <ul>
+    <li>Coronaviruses are common in different animals. Rarely, an animal coronavirus can infect humans.</li>
+    <li>There are many different kinds of coronaviruses. Some of them can cause colds or other mild respiratory (nose, throat, lung) illnesses.</li>
+    <li>Other coronaviruses can cause more serious diseases, including severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS).</li>
+    <li>Coronaviruses are named for their appearance: Under the microscope, the viruses look like they are covered with pointed structures that surround them like a corona, or crown.</li></ul>
+    <hr>
+    <h5>How does Corona-virus spreads?</h5>
+    <p>COVID-19 can be passed from person to person through droplets from coughs and sneezes. COVID-19 has been detected in people all over the world, and is considered a pandemic.</p>
+    <p>The spread of this new coronavirus is being monitored by the Centers for Disease Control (CDC), the World Health Organization and health organizations like Johns Hopkins across the globe.</p>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='virus_2.jpg') }}" height="260" width="482"/>
+   </div>
+   <hr>
+   <h5> How did this new coronavirus spread to humans?</h5>
+    <p>COVID-19 appeared in Wuhan, a city in China, in December 2019. Although health officials are still tracing the exact source of this new coronavirus, early hypotheses thought it may be linked to a seafood market in Wuhan, China. Some people who visited the market developed viral pneumonia caused by the new coronavirus.</p>
+    <p>A study that came out on Jan. 25, 2020, notes that the individual with the first reported case became ill on Dec. 1, 2019, and had no link to the seafood market. Investigations are ongoing as to how this virus originated and spread.</p>
+    <hr>
+    <h5>What is the incubation period for COVID-19?</h5>
+    <p>It appears that symptoms are showing up in people within 14 days of exposure to the virus.</p>
+        <div style="text-align: center; margin-top: 20px">
+       <img style="max-height: 400px", src="{{ url_for('static', filename='c1.jpg') }}" height="260" width="482"/>
+   </div>
+    <hr>
+    <h5>What are symptoms of COVID-19?</h5>
+    <p>COVID-19 symptoms includes : </p>
+    <ul>
+      <li>Cough</li>
+      <li>Fever</li>
+      <li>Shortness of breath</li>
+    </ul>
+    <p><b>In</b> rare cases, COVID-19 can lead to severe respiratory problems, kidney failure or death.</p>
+    <p>If you have a fever or any kind of respiratory difficulty such as coughing or shortness of breath, call your doctor or a health care provider and explain your symptoms over the phone before going to the doctor’s office, urgent care facility or emergency room. Here are suggestions if you feel sick and are concerned you might have COVID-19.</p>
+    <p>If you have a medical emergency such as severe shortness of breath, call 911 and let them know about your symptoms.</p>
+    <hr>
+    <h5>How is COVID-19 diagnosed?</h5>
+    <p>Diagnosis may be difficult with only a physical exam because mild cases of COVID-19 may appear similar to the flu or a bad cold. A laboratory test can confirm the diagnosis. Learn more about COVID-19 testing.</p>
+    <hr>
+    <h5>How is COVID-19 treated?</h5>
+    <p>As of now, there is not a specific treatment for the virus. People who become sick from COVID-19 should be treated with supportive measures: those that relieve symptoms. For severe cases, there may be additional options for treatment, including research drugs and therapeutics.</p>
+    <hr>
+    <h5>Does COVID-19 cause death?</h5>
+    <p>As of Mar. 21, 2020, 11,906 deaths have been attributed to COVID-19. However, 89,899 people have recovered from the illness. This information comes from the Coronavirus COVID-19 Global Cases map developed by the Johns Hopkins Center for Systems Science and Engineering.</p>
+    <hr>
+    <h5>Is this coronavirus different from SARS?</h5>
+    <p><b>SARS</b> stands for severe acute respiratory syndrome. In 2003, an outbreak of SARS started in China and spread to other countries before ending in 2004. The virus that causes COVID-19 is similar to the one that caused the 2003 SARS outbreak: both are types of coronaviruses. Much is still unknown, but COVID-19 seems to spread faster than the 2003 SARS and also may cause less severe illness.</p>
+    <hr>
+    <h5>How do you protect yourself from this coronavirus?</h5>
+    <p>It’s crucial to practice good hygiene, respiratory etiquette and social distancing. Read following points about ways to protect yourself.</p>
+    <ul>
+      <li>Stay home as much as possible and reduce visitors.</li>
+      <li>Stay at least six feet away from others in public places.</li>
+      <li>Call friends and family or visit by video.</li>
+      <li>Ask your employer if it’s possible to work from home.</li>
+      <li>Avoid people who appear sick.</li>
+      <li>Go grocery shopping and run errands during off-peak times.</li>
+    </ul>
+    <p></p>
+    <p>Healthy people do not need to wear a mask unless they are caring for someone diagnosed with, or being monitored for, COVID-19, or respiratory illness.</p>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='c2.jpg') }}"/>
+   </div>
+  <a href= "https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/how-can-i-protect-myself-from-coronavirus">Visit Me! for more</a>
+    <hr>
+<!--<div style="text-align: center; margin-top: 20px">
+    <iframe src="{{ url_for('static', filename='videoplayback') }}" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+  </div>-->
+	</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+
+</body>
+</html>
