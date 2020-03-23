@@ -96,7 +96,7 @@ def upload_file():
 
             return render_template('predict.html', image_file_name = file.filename, label = label, accuracy = accuracy)
         except :
-            flash("Please select the image first !!", "success")      
+            flash("Please select the image first !!", "danger")      
             return redirect(url_for("corona"))
 
 """@app.route('/upload11', methods=['POST','GET'])
