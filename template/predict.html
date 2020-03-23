@@ -21,7 +21,7 @@
       font-family: "Segoe UI";
       background: #2B2B2B;
       text-align: center;
-      margin-top: 138px;
+      margin-top: 85px;
       padding: 16px;
       bottom: 8px;
     }
@@ -52,7 +52,7 @@
 <div class= "container">
   <h4 style="margin: auto;width: 80%; text-align: center; margin-top: 20px;  text-transform: uppercase">Corona Detection Test</h4>
 <div style="width: 90%; margin: auto; text-align: center">
-    <img src="{{ url_for('send_file', filename=image_file_name)}}" style ="max-width: 370px; max-height: 380px; margin-top: 30px; margin-bottom: 10px">
+    <img src="{{ url_for('send_file', filename=image_file_name)}}" height="290" width= "290" style ="max-width: 370px; max-height: 380px; margin-top: 30px; margin-bottom: 10px">
     <p style="font-style: italic">{{ image_file_name }}</p>
 
     <h3 style="margin-top: 40px"><b>Predicted Label: <span style="color: green">{{ label }}</span></b></h3>
